@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/*
+ * Custom theme tokens for the Shimo Café design system.
+ * Tailwind v4 uses @theme instead of tailwind.config.js.
+ */
+@theme {
+  --color-cafe-cream: #F7F3EA;
+  --color-cafe-brown: #2D2723;
+  --color-cafe-muted: #7E7068;
+  --color-cafe-accent: #B08D6A;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cafe-cream);
+    color: var(--color-cafe-brown);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
